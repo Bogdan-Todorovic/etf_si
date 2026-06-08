@@ -1,0 +1,14 @@
+Predlozeni redosled izrade:
+- [x] Alokator memorije (Klasa `MemoryAllocator`)
+- [x] Prekidna rutina - samo prenos argumenata i prelazak u odgovarajuci rezim rada procesora, bez promene konteksta, bez ulaska dalje u jezgro, samo kao potprogram koji se iz korisnickog programa (bez niti) poziva kao "obican" potprogram, samo preko instrukcije ecall, a ne radi vise nista vec se odmah vraca nazad
+- [x] Razgranati skok na implementaciju pojedinacnog sistemskog poziva u prekidnoj rutini. C funkcija koja implementira zajednicki deo sistemskih poziva. Sistemski pozivi `mem_alloc` i `mem_free`: pozivi iz prekidne rutine, ABI i C API. Testiranje iz "obicnog" C programa (bez niti) pozivom C API funkcije kao obicnog potprograma
+- [x] Kostur jezgra: kostur klase `Thread` i klasa `Scheduler` u potpunosti
+- [x] Sistemski stek, pojedinacan za nit. Kompletiranje prekidne rutine cuvanjem i restauracijom registara. Promena konteksta: u operaciji `yield` ili u prekidnoj rutini
+- [x] Formiranje pocetnog konteksta niti. Sistemski pozivi `dispatch` i `thread_create` (ABI i C API). Testiranje pomocu niti koje se nikada ne zavrsavaju.
+- [x] Gasenje niti. Sistemski poziv `thread_exit` (C API i ABI)
+- [x]  Semafori: klase `Semaphore` u implementaciji jezgra u potpunosti, svi sistemski pozivi za operacije sa semaforima (ABI i C API)
+- [x] Asinhroni prekid od tajmera, raspodela vremena (promena konteksta na istek vremenskog odsecka)
+- [x] Uspavljivanje i budjenje niti, sistemski poziv `time_sleep` (C API i ABI)
+- [x] Konzola, izlazni smer (slanje podataka na ekran): bafer, interna nit jezgra, sistemski poziv `putc` (C API i ABI)
+- [x] Konzola, ulazni smer (prijem podatak sa tastature): bafer, prekidna rutina, sistemski poziv `getc` (C API i ABI)
+- [x] C++ API u celini

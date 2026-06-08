@@ -1,0 +1,1 @@
+Emulator RISC-V procesora je moguće zaustaviti izvršavanjem odgovarajućih instrukcija. Upisom 32-bitne vrednosti 0x5555 na adresu 0x100000 emulator RISC-V procesora se zaustavlja. Na ovaj način je moguće zaustaviti proces emulatora nakon što završi korisnički program

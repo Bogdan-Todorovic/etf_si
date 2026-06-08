@@ -1,0 +1,5 @@
+- Pozvana funkcija je duzna da obezbedi da nakon povratka iz nje registri opste namene i registar sp imaju istu vrednost kao i pre poziva funkcije
+- Povratna adresa se pamti u registru `ra`
+- Parametri se prenose preko registara `a0..a7` (redom sleva nadesno u potpisu funkcije), a preko memorije ukoliko ne mogu da se smeste u registar
+- Povratna vrednost se prenosi preko registara `a0` i po potrebni `a1`
+- Pseudoinstrukcija `ret` upisuje vrednost registra `ra` u registar `pc`

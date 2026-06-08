@@ -1,0 +1,1 @@
+Ovaj projekat podrazumeva implementaciju jednoprocesorskog jezgra.
