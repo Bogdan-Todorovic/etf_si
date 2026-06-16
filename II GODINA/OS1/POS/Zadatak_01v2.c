@@ -38,6 +38,8 @@ void* B(void *arg) {
 }
 
 int main() {
+    // Pakovanje semafora, vrednosti x i y u strukturu i prosedjivanje funkcijama
+    // Ostala logika ista kao u v1
     Data data;
     pthread_t threadA, threadB;
 
